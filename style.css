@@ -1,0 +1,45 @@
+:root {
+  --ground: #f1f6f9;
+  --card: #ffffff;
+  --ink: #0d1219;
+  --muted: #5c6876;
+  --faint: #92a0ad;
+  --emerald: #0e9e66;
+  --hairline: rgba(13, 18, 25, 0.08);
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  padding: 0 20px 80px;
+  background: var(--ground);
+  color: var(--ink);
+  font: 16px/1.65 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  -webkit-text-size-adjust: 100%;
+}
+main { max-width: 680px; margin: 0 auto; }
+header { padding: 56px 0 28px; }
+.mark {
+  display: inline-flex; align-items: baseline; gap: 4px;
+  font-weight: 800; font-size: 26px; letter-spacing: -0.02em;
+  text-decoration: none; color: var(--ink);
+}
+.mark span { color: var(--emerald); font-size: 18px; }
+h1 { font-size: 30px; line-height: 1.2; letter-spacing: -0.02em; margin: 28px 0 6px; }
+h2 { font-size: 18px; margin: 32px 0 8px; letter-spacing: -0.01em; }
+.updated { color: var(--faint); font-size: 14px; margin: 0 0 8px; }
+p, li { color: var(--muted); }
+li { margin-bottom: 6px; }
+strong { color: var(--ink); }
+a { color: var(--emerald); }
+.card {
+  background: var(--card); border-radius: 22px; padding: 26px 26px 30px;
+  box-shadow: 0 12px 30px rgba(13, 18, 25, 0.05), 0 1px 2px rgba(13, 18, 25, 0.03);
+}
+nav { margin: 26px 0 0; display: flex; gap: 18px; flex-wrap: wrap; font-size: 15px; }
+footer { margin-top: 40px; padding-top: 20px; border-top: 1px solid var(--hairline);
+         color: var(--faint); font-size: 14px; }
+@media (prefers-color-scheme: dark) {
+  :root { --ground: #0e131a; --card: #161d26; --ink: #eef3f7; --muted: #a3b0bd;
+          --faint: #6f7d8b; --hairline: rgba(255, 255, 255, 0.1); }
+  .card { box-shadow: none; border: 1px solid var(--hairline); }
+}
