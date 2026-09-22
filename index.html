@@ -2,43 +2,218 @@
 <html lang="en">
 <head>
 <meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Support — More GB</title>
-<link rel="stylesheet" href="style.css">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>More GB — Free up iPhone storage, measured honestly</title>
+<meta name="description" content="iPhone storage almost full? More GB shrinks the photos and videos you choose to lower the number in Settings, and makes the cache iOS is holding usable now. Every result is measured.">
+<link rel="canonical" href="https://moregb.yigitech.dev/">
+<meta name="theme-color" content="#eef3f6" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#0d131b" media="(prefers-color-scheme: dark)">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" type="image/png" href="/favicon.png">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="More GB">
+<meta property="og:url" content="https://moregb.yigitech.dev/">
+<meta property="og:title" content="More GB — Free up iPhone storage, measured honestly">
+<meta property="og:description" content="Shrink the photos and videos you choose, make the cache iOS is holding usable, and see exactly how much came back.">
+<meta property="og:image" content="https://moregb.yigitech.dev/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="More GB: iPhone storage split into in use, held by iOS and usable.">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@yigitech">
+
+<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="/landing.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "MobileApplication",
+  "name": "More GB",
+  "alternateName": "More GB: Phone Storage",
+  "url": "https://moregb.yigitech.dev/",
+  "image": "https://moregb.yigitech.dev/images/icon-512.png",
+  "description": "Frees up iPhone storage by shrinking the photos and videos you choose and making the cache iOS is holding usable, with every result measured before and after.",
+  "operatingSystem": "iOS 18 or later",
+  "applicationCategory": "UtilitiesApplication",
+  "inLanguage": ["en", "tr", "de", "ar"],
+  "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD", "description": "Free to download. The clean-up tools are part of Pro." },
+  "author": { "@type": "Person", "name": "Yigit", "url": "https://yigitech.dev/" }
+}
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "Why does my iPhone say storage is full when Settings shows free space?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Settings counts the cache iOS is holding as free, but apps cannot write into it until iOS clears it. A video or an update can run out of room while Settings still looks fine. More GB asks iOS to clear that cache now, so the space is usable." }
+    },
+    {
+      "@type": "Question",
+      "name": "Can an app clear System Data on iPhone?",
+      "acceptedAnswer": { "@type": "Answer", "text": "No. iOS does not let any app empty System Data or another app's cache, including WhatsApp. More GB does not claim to. What lowers the used figure in Settings is shrinking or deleting photos and videos, then emptying Recently Deleted." }
+    },
+    {
+      "@type": "Question",
+      "name": "Does More GB delete my photos?",
+      "acceptedAnswer": { "@type": "Answer", "text": "Only the photos and videos you pick, and iOS asks you to confirm every change. Converted items keep their date, place, favourite mark and albums, and deleted items go to Recently Deleted first." }
+    },
+    {
+      "@type": "Question",
+      "name": "Why did a run return nothing?",
+      "acceptedAnswer": { "@type": "Answer", "text": "iOS decides how much of its cache to release, and it gives up little when the phone still has plenty of free space. The app reports a run that returned nothing as nothing." }
+    }
+  ]
+}
+</script>
 </head>
 <body>
+
+<header class="wrap bar">
+  <a class="mark" href="/"><img src="/images/icon-160.png" alt="" width="34" height="34">More GB</a>
+  <nav aria-label="Main">
+    <a href="#how">How it works</a>
+    <a href="#faq">Questions</a>
+    <a href="/support.html">Support</a>
+    <a class="button" href="https://testflight.apple.com/join/GbJPjrbB">Join the beta</a>
+  </nav>
+</header>
+
 <main>
-<header><a class="mark" href="./">GB<span>+</span></a></header>
-<h1>More GB</h1>
-<p>More GB shrinks and clears the photos and videos you choose, which lowers the number Settings shows as used, and asks iOS to release the cache it is holding, so that space is usable right away. Every result is measured, not estimated.</p>
+  <section class="wrap hero">
+    <div>
+      <p class="eyebrow">iPhone storage, measured</p>
+      <h1>Storage almost full? <span class="quiet">Get the room back.</span></h1>
+      <p class="lede">More GB shrinks the photos and videos you choose, which lowers the number in Settings, and asks iOS to hand over the cache it is holding, so that room is usable right now. Every result is measured before and after, never estimated.</p>
+      <div class="cta-row">
+        <a class="button" href="https://testflight.apple.com/join/GbJPjrbB">Join the TestFlight beta</a>
+        <p class="cta-note">Free to try on iOS 18 and later.<br>Coming to the App Store.</p>
+      </div>
+    </div>
+    <img class="phone" src="/images/home.webp" width="662" height="1440"
+         alt="More GB home screen: 24.0 GB held by iOS, 96.9 GB in use and 7.1 GB usable on a 128 GB iPhone.">
+  </section>
 
-<div class="card">
-<h2 style="margin-top:0">Support</h2>
-<p>Questions, problems, refunds, anything: <a href="mailto:info@jarviswdesign.com">info@jarviswdesign.com</a>. Please include your iPhone model and iOS version.</p>
-</div>
+  <section class="wrap split" id="how" aria-labelledby="how-title">
+    <h2 class="correct" id="how-title">Settings calls part of your storage <del>free</del> <ins>held by iOS</ins>.</h2>
+    <div class="meter" aria-hidden="true"><span class="in-use"></span><span class="held"></span><span class="usable"></span></div>
+    <ul class="legend">
+      <li class="in-use">
+        <span class="figure">96.9 GB</span>
+        <span class="label">In use</span>
+        <p>Apps, photos, messages and iOS itself. This is the number Settings shows as used.</p>
+      </li>
+      <li class="held">
+        <span class="figure">24.0 GB</span>
+        <span class="label">Held by iOS</span>
+        <p>Cache iOS deletes only when something needs the room. Settings already counts it as free, but a 4K video or an update cannot use it yet.</p>
+      </li>
+      <li class="usable">
+        <span class="figure">7.1 GB</span>
+        <span class="label">Usable</span>
+        <p>Room apps can write to right now. It is the figure that decides whether your next recording fits.</p>
+      </li>
+    </ul>
+    <p class="caption">Example reading from a 128 GB iPhone. The app reads your own figures from iOS.</p>
+  </section>
 
-<h2>Common questions</h2>
+  <section class="wrap ways" aria-labelledby="ways-title">
+    <h2 class="section-title" id="ways-title">Two kinds of room, and the app tells you which is which.</h2>
+    <p class="section-lede">Some space shows up as a lower number in Settings. Some shows up as room you can finally use. More GB does both and never mixes them up.</p>
+    <div class="ways-grid">
+      <article class="way settings">
+        <span class="tag">Lowers Settings</span>
+        <h3>Shrink and clear your photos and videos</h3>
+        <p>Your own photos and videos are the only thing any app can take off the used figure in Settings. More GB finds what takes the most room:</p>
+        <ul>
+          <li>Large videos re-encoded to HEVC, or 4K brought down to 1080p</li>
+          <li>ProRAW photos rewritten as full-size HEIC</li>
+          <li>Old Live Photos turned into stills</li>
+          <li>Screenshots, screen recordings, bursts and near-duplicates</li>
+        </ul>
+        <p class="fine">Nothing changes until you choose it, and every rewrite keeps the date, place, favourite mark and albums. Deleted items wait in Recently Deleted for 30 days; the app reminds you to empty it.</p>
+      </article>
+      <article class="way held-space">
+        <span class="tag">Usable now</span>
+        <h3>Make the cache iOS is holding usable</h3>
+        <p>More GB asks iOS for the room it says it can spare, then hands it straight back as free space. None of your files are touched.</p>
+        <div class="run">
+          <img src="/images/result.webp" width="662" height="1440" loading="lazy"
+               alt="More GB result screen: 6.8 GB ready to use, usable space from 17.0 GB to 23.9 GB.">
+          <dl>
+            <dt>Usable before</dt><dd>17.0 GB</dd>
+            <dt>Usable after</dt><dd class="up">23.9 GB</dd>
+            <dt>One run, iPhone 14</dt>
+          </dl>
+        </div>
+        <p class="fine">Settings already counts this cache as free, so its used figure does not change. How much comes back is up to iOS; some runs return nothing, and the app says so.</p>
+      </article>
+    </div>
+  </section>
 
-<h2 style="font-size:16px">A run returned nothing. Is it broken?</h2>
-<p>No. How much iOS releases depends on the system and on how full the phone already is. If your iPhone has plenty of free space, there is no pressure on the cache and the system may hand back nothing. The app tells you that instead of claiming success.</p>
+  <section class="limits" aria-labelledby="limits-title">
+    <div class="wrap">
+      <h2 class="section-title" id="limits-title">What it will not pretend to do</h2>
+      <p class="section-lede">Most storage cleaners promise to wipe System Data. None of them can, and neither can this one.</p>
+      <div class="limits-grid">
+        <div>
+          <h3>Empty System Data</h3>
+          <p>iOS gives no app a way into System Data or into another app's cache, WhatsApp included. Where a step only you can take would help, like the ProRes clean-up on Pro models, the app walks you through it and measures the result.</p>
+        </div>
+        <div>
+          <h3>Guess a number</h3>
+          <p>Every figure is read from iOS before and after. When iOS keeps its cache, the app reports that instead of a success screen.</p>
+        </div>
+        <div>
+          <h3>Watch you</h3>
+          <p>No account, no analytics, no tracking. Your photos are processed on your iPhone and never uploaded.</p>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<h2 style="font-size:16px">I reclaimed space. Why did the number in Settings not change?</h2>
-<p>Because Settings already counts the cache iOS is holding as free. Releasing it turns that space into room apps can actually use, which is what matters when you record a video or install an update, but it cannot lower the used figure. What lowers Settings is shrinking or deleting photos and videos, and then emptying Recently Deleted, where deleted items keep counting for 30 days.</p>
+  <section class="wrap faq" id="faq" aria-labelledby="faq-title">
+    <h2 class="section-title" id="faq-title">Questions</h2>
+    <details>
+      <summary>Why does my iPhone say storage is full when Settings shows free space?</summary>
+      <p>Settings counts the cache iOS is holding as free, but apps cannot write into it until iOS clears it. A video or an update can run out of room while Settings still looks fine. More GB asks iOS to clear that cache now, so the space is usable.</p>
+    </details>
+    <details>
+      <summary>Can an app clear System Data on iPhone?</summary>
+      <p>No. iOS does not let any app empty System Data or another app's cache, including WhatsApp. More GB does not claim to. What lowers the used figure in Settings is shrinking or deleting photos and videos, then emptying Recently Deleted.</p>
+    </details>
+    <details>
+      <summary>Does More GB delete my photos?</summary>
+      <p>Only the photos and videos you pick, and iOS asks you to confirm every change. Converted items keep their date, place, favourite mark and albums, and deleted items go to Recently Deleted first.</p>
+    </details>
+    <details>
+      <summary>Why did a run return nothing?</summary>
+      <p>iOS decides how much of its cache to release, and it gives up little when the phone still has plenty of free space. The app reports a run that returned nothing as nothing.</p>
+    </details>
+    <p><a href="/support.html">More answers and support</a></p>
+  </section>
 
-<h2 style="font-size:16px">Does it delete my photos or messages?</h2>
-<p>Only photos and videos you pick, and iOS asks you to confirm every change. Converted items keep their date, place, favourite mark and albums, and anything deleted goes to Recently Deleted first. Messages, apps and documents are never touched, and the cache run deletes none of your files.</p>
-
-<h2 style="font-size:16px">Can it clean WhatsApp or other apps?</h2>
-<p>No, and neither can any other app. iOS isolates every app's data at the kernel level, so no third-party app can read, size or delete another app's storage. WhatsApp can only be cleaned from inside WhatsApp.</p>
-
-<h2 style="font-size:16px">How do I cancel or restore a purchase?</h2>
-<p>Subscriptions are managed in the Settings app under your Apple Account, not in More GB. To restore a purchase on a new device, tap <strong>Restore</strong> on the plan screen.</p>
-
-<h2 style="font-size:16px">Can it remind me to run it again?</h2>
-<p>Yes. Settings has a monthly reminder and a low-space warning, both off by default. Turning one on is when the app asks for notification permission.</p>
-
-<nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
-<footer>More GB · <a href="mailto:info@jarviswdesign.com">info@jarviswdesign.com</a></footer>
+  <section class="wrap closing" aria-labelledby="closing-title">
+    <img src="/images/icon-160.png" alt="" width="80" height="80" loading="lazy">
+    <h2 class="section-title" id="closing-title">See what your iPhone is really holding.</h2>
+    <p>The full storage breakdown is free. The clean-up tools are part of Pro.</p>
+    <a class="button" href="https://testflight.apple.com/join/GbJPjrbB">Join the TestFlight beta</a>
+  </section>
 </main>
+
+<footer class="wrap foot">
+  <span>More GB</span>
+  <a href="/support.html">Support</a>
+  <a href="/privacy.html">Privacy</a>
+  <a href="/terms.html">Terms</a>
+  <span class="spacer"></span>
+  <a href="mailto:info@yigitech.dev">info@yigitech.dev</a>
+</footer>
+
 </body>
 </html>
