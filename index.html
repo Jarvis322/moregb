@@ -10,7 +10,7 @@
 <main>
 <header><a class="mark" href="./">GB<span>+</span></a></header>
 <h1>More GB</h1>
-<p>More GB shows what iOS is holding on your iPhone as reclaimable cache, asks the system to release it, and reports how much actually came back.</p>
+<p>More GB shrinks and clears the photos and videos you choose, which lowers the number Settings shows as used, and asks iOS to release the cache it is holding, so that space is usable right away. Every result is measured, not estimated.</p>
 
 <div class="card">
 <h2 style="margin-top:0">Support</h2>
@@ -22,8 +22,11 @@
 <h2 style="font-size:16px">A run returned nothing. Is it broken?</h2>
 <p>No. How much iOS releases depends on the system and on how full the phone already is. If your iPhone has plenty of free space, there is no pressure on the cache and the system may hand back nothing. The app tells you that instead of claiming success.</p>
 
+<h2 style="font-size:16px">I reclaimed space. Why did the number in Settings not change?</h2>
+<p>Because Settings already counts the cache iOS is holding as free. Releasing it turns that space into room apps can actually use, which is what matters when you record a video or install an update, but it cannot lower the used figure. What lowers Settings is shrinking or deleting photos and videos, and then emptying Recently Deleted, where deleted items keep counting for 30 days.</p>
+
 <h2 style="font-size:16px">Does it delete my photos or messages?</h2>
-<p>Never. The app does not read or delete your files. It only asks the system to release its own cache.</p>
+<p>Only photos and videos you pick, and iOS asks you to confirm every change. Converted items keep their date, place, favourite mark and albums, and anything deleted goes to Recently Deleted first. Messages, apps and documents are never touched, and the cache run deletes none of your files.</p>
 
 <h2 style="font-size:16px">Can it clean WhatsApp or other apps?</h2>
 <p>No, and neither can any other app. iOS isolates every app's data at the kernel level, so no third-party app can read, size or delete another app's storage. WhatsApp can only be cleaned from inside WhatsApp.</p>
@@ -32,7 +35,7 @@
 <p>Subscriptions are managed in the Settings app under your Apple Account, not in More GB. To restore a purchase on a new device, tap <strong>Restore</strong> on the plan screen.</p>
 
 <h2 style="font-size:16px">Can it remind me to run it again?</h2>
-<p>Yes. Settings has a monthly reminder, off by default. Turning it on is the only time the app asks for a permission.</p>
+<p>Yes. Settings has a monthly reminder and a low-space warning, both off by default. Turning one on is when the app asks for notification permission.</p>
 
 <nav><a href="privacy.html">Privacy Policy</a><a href="terms.html">Terms of Use</a></nav>
 <footer>More GB · <a href="mailto:info@jarviswdesign.com">info@jarviswdesign.com</a></footer>
